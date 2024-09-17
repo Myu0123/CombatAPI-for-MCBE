@@ -4,7 +4,7 @@
 catch(error){
   return NaN;
 }*/
-class LCG_SeededRNG{
+export class LCG_SeededRNG{
   constructor(seed){ //seed不可為0
     this.max = 2147483647;
     this.period = 16807;
@@ -24,7 +24,7 @@ class LCG_SeededRNG{
   }
 }
 
-class Weight{
+export class Weight{
   constructor(choices, weights, times){
     this.c = choices;
     this.w = weights;
@@ -47,7 +47,7 @@ class Weight{
   }
 }
 
-class Rarity{
+export class Rarity{
   constructor(maximum){
     this.m = maximum;
   }
@@ -58,3 +58,4 @@ class Rarity{
     else return 1 / RN;
   }
 }
+
